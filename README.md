@@ -30,7 +30,7 @@ PCADA significantly outperforms previous works on several DA benchmarks. This in
 |     CLCM [5]     |         90.62 ± 4.09          |      81.13 ± 1.58       |   90.14 ± 1.55    |
 |    CPGAN [6]     |         92.09 ± 0.96          |      76.91 ± 2.19       |   88.01 ± 2.98    |
 |     MSDA [7]     |         92.44 ± 0.98          |      81.03 ± 1.59       |   92.77 ± 1.66    |
-|    IEH-DA [7]    |         93.50 ± 0.52          |      81.74 ± 3.66       |   90.63 ± 1.70    |
+|    IEH-DA [8]    |         93.50 ± 0.52          |      81.74 ± 3.66       |   90.63 ± 1.70    |
 | **PCADA (Ours)** |       **95.06 ± 0.57**        |    **85.24 ± 2.01**     | **96.10 ± 1.33**  |
 
 References:
@@ -42,7 +42,7 @@ References:
 5. Ning et al. "Contrastive learning based on category matching for domain adaptation in hyperspectral image classification" in TGRS 2023.
 6. Xie et al. "Class-wise prototype guided alignment network for cross-scene hyperspectral image classification" in TGRS, 2024.
 7. Fang et al. "Masked self-distillation domain adaptation for hyperspectral image classification" in TGRS, 2024.
-8. Zhang et al. "Easy-to-hard domain adap￾tation with human interaction for hyperspectral image classification" in TGRS, 2024.
+8. Zhang et al. "Easy-to-hard domain adaptation with human interaction for hyperspectral image classification" in TGRS, 2024.
 
 ## Setup Environment
 
