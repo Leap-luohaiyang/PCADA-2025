@@ -6,6 +6,7 @@
 > [Chen Gong](https://gcatnjust.github.io/ChenGong/index.html).
 
 ## Overview
+
 The high cost of data annotation has become a major factor restricting the hyperspectral image (HSI) classification task. 
 To address this issue, domain adaptation (DA) techniques have been developed to adapt models trained on abundantly labeled 
 HSIs to those with scarce labels. As a novel DA paradigm, active domain adaptation (ADA) seeks to selectively annotate informative examples using active learning (AL) techniques under domain shift scenarios, ultimately enhancing model adaptation performance. 
@@ -52,3 +53,38 @@ For this project, we used python 3.9.21. We recommend setting up a new virtual e
 python -m venv ~/venv/pcada
 source ~/venv/pcada/bin/activate
 ```
+All experiments were executed on an NVIDIA RTX 3090.
+
+## Setup Datasets
+
+You can download the hyperspectral datasets in mat format from [here](https://pan.baidu.com/s/184BXDD2KnlreqXX70Nar4Q?pwd=kfgj)
+and move them to `dataset/` folder.
+
+The final folder structure should look like this:
+
+```none
+PCADA
+├── ...
+├── dataset
+│   ├── Houston
+│   │   ├── Houston13.mat
+│   │   ├── Houston13_7gt.mat
+│   │   ├── Houston18.mat
+│   │   ├── Houston18_7gt.mat
+│   ├── Pavia
+│   │   ├── paviaU.mat
+│   │   ├── paviaU_gt_7.mat
+│   │   ├── pavia.mat
+│   │   ├── pavia_gt_7.mat
+│   ├── Shanghai-Hangzhou
+│   │   ├── DataCube.mat
+├── ...
+```
+
+## Training
+
+## Testing & Predictions
+
+## Checkpoints
+
+## Acknowledgements
