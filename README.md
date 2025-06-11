@@ -49,10 +49,18 @@ References:
 
 For this project, we used python 3.9.21. We recommend setting up a new virtual environment:
 
-```shell
-python -m venv ~/venv/pcada
-source ~/venv/pcada/bin/activate
+**Step-by-step installation**
+
+```bash
+conda create --name pcada -y python=3.9
+conda activate pcada
+
+# this installs the right pip and dependencies for the fresh python
+conda install -y ipython pip
+
+pip install -r requirements.txt
 ```
+
 All experiments were executed on an NVIDIA RTX 3090.
 
 ## Setup Datasets
@@ -82,9 +90,30 @@ PCADA
 ```
 
 ## Training
+For convenience, we provide PCADA config files for different tasks. You can start the training job with the following command:
 
-## Testing & Predictions
+For Pavia task
+```
+python main.py --cfg configs/pavia.yaml
+```
+
+For Houston task
+```
+python main.py --cfg configs/houston.yaml
+```
+
+For Shanghai-Hangzhou task
+```
+python main.py --cfg configs/shanghai-hangzhou.yaml
+```
 
 ## Checkpoints
 
+Below, we provide checkpoints of PCADA for different benchmarks. As the results in the paper are provided as the mean over ten random seeds, we provide the checkpoint with the median validation performance here.
+
 ## Acknowledgements
+
+This project is based on the following open-source projects. We thank their authors for making the source code publically available.
+
+* [SCLUDA](https://github.com/Li-ZK/SCLUDA-2023/tree/main)
+* [LAMDA](https://github.com/sehyun03/ADA-label-distribution-matching)
