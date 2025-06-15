@@ -108,7 +108,7 @@ PCADA
 ```
 
 ## Training
-For convenience, we provide PCADA config files for different tasks. You can start the training job with the following command:
+For convenience, we provide training files for different tasks. You can start the training job with the following command:
 
 For Pavia task
 ```
