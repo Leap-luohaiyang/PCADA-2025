@@ -1,9 +1,11 @@
-# [IEEE TGRS 2025] Official Implementation of Prototype-Guided Class-Balanced Active Domain Adaptation for Hyperspectral Image Classification
+# Prototype-Guided Class-Balanced Active Domain Adaptation for Hyperspectral Image Classification
 
 > **Authors:** 
 > Haiyang Luo, 
 > [Shengwei Zhong](https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=Qoo2!0IeRoObZTQBF7xlYA==&yxsh=z70ppxVSQAs=&zydm=SwsWR9zpmmw=), 
 > [Chen Gong](https://gcatnjust.github.io/ChenGong/index.html).
+
+**[[TGRS-2025 Paper]](https://ieeexplore.ieee.org/abstract/document/11023873)**
 
 ## Overview
 
@@ -19,6 +21,20 @@ module, and class-balanced self-training (CBST) module. The PGDA module generate
 The experimental results conducted on multiple benchmark HSI datasets demonstrate the superior performance of PCADA.
 
 ![Framework](resources/Framework.png)
+
+For more information on PCADA, please check our [[TGRS-2025 Paper]](https://ieeexplore.ieee.org/abstract/document/11023873). 
+
+If you find this project useful in your research, please consider citing:
+
+```
+@article{luo2025prototype,
+  title={Prototype-Guided Class-Balanced Active Domain Adaptation for Hyperspectral Image Classification},
+  author={Luo, Haiyang and Zhong, Shengwei and Gong, Chen},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2025},
+  publisher={IEEE}
+}
+```
 
 ## Comparison with State-of-the-Art UDA
 
@@ -68,14 +84,14 @@ All experiments were executed on an NVIDIA RTX 3090.
 ## Setup Datasets
 
 You can download the hyperspectral datasets in mat format from [here](https://pan.baidu.com/s/184BXDD2KnlreqXX70Nar4Q?pwd=kfgj)
-and move them to `dataset/` folder.
+and move them to `data/` folder.
 
 The final folder structure should look like this:
 
 ```none
 PCADA
 ├── ...
-├── dataset
+├── data
 │   ├── Houston
 │   │   ├── Houston13.mat
 │   │   ├── Houston13_7gt.mat
@@ -96,17 +112,17 @@ For convenience, we provide PCADA config files for different tasks. You can star
 
 For Pavia task
 ```
-python main.py --cfg configs/pavia.yaml
+python main_pavia.py
 ```
 
 For Houston task
 ```
-python main.py --cfg configs/houston.yaml
+python main_houston.py
 ```
 
 For Shanghai-Hangzhou task
 ```
-python main.py --cfg configs/shanghai-hangzhou.yaml
+python main_shanghai-hangzhou.py
 ```
 
 ## Checkpoints
