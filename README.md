@@ -129,6 +129,25 @@ python main_shanghai-hangzhou.py
 
 Below, we provide checkpoints of PCADA for different benchmarks. As the results in the paper are provided as the mean over ten random seeds, we provide the checkpoint with the median validation performance here.
 
+## Get Classification Map
+
+Already as this point, the provided PCADA model can be applied to obtain the classification maps:
+
+For Pavia task
+```
+python getmap_pavia.py
+```
+
+For Houston task
+```
+python getmap_houston.py
+```
+
+For Shanghai-Hangzhou task
+```
+python getmap_shanghai-hangzhou.py
+```
+
 ## Acknowledgements
 
 This project is based on the following open-source projects. We thank their authors for making the source code publically available.
