@@ -18,6 +18,8 @@ module, and class-balanced self-training (CBST) module. The PGDA module generate
 
 The experimental results conducted on multiple benchmark HSI datasets demonstrate the superior performance of PCADA.
 
+![Framework](resources/Framework.png)
+
 ## Comparison with State-of-the-Art UDA
 
 PCADA significantly outperforms previous works on several DA benchmarks. This includes Pavia University→Pavia Center and Houston2013→Houston2018 and Shanghai→Hangzhou.
